@@ -1,0 +1,9 @@
+{
+  "marketId": "BTC-AUD",
+  "timestamp": "2020-05-09T12:51:40.261Z",
+  "tradeId": 6033624190,
+  "price": "14850",
+  "volume": "0.25",
+  "messageType": "trade",
+  "side": "Bid"
+}

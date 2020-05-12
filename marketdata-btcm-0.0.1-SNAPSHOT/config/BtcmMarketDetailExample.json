@@ -1,0 +1,13 @@
+{
+  "marketId": "BTC-AUD",
+  "timestamp": "2020-05-09T12:51:10.684Z",
+  "bestBid": "14815.38",
+  "bestAsk": "14850",
+  "lastPrice": "14850",
+  "volume24h": "260.39282536",
+  "messageType": "tick",
+  "price24h": "-306.68",
+  "low24h": "14594.77",
+  "high24h": "15383.65",
+  "snapshotId": 1589028670684000
+}

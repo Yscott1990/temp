@@ -1,0 +1,44 @@
+btcm:
+  websocket:
+    endpoint: wss://socket.btcmarkets.net/v2
+  channels:
+    - tick
+    - trade
+    - orderbook
+  marketIds:
+    - BTC-AUD
+---
+spring:
+  profiles:
+    active: local
+---
+spring:
+  profiles: local
+
+redis:
+  host: localhost
+  port: 6379
+  topics:
+    orderbook:
+      btcaud: CH_OB_BTCM_BTCAUD
+    marketDetail:
+      btcaud: CH_MD_BTCM_BTCAUD
+    tradeDetail:
+      btcaud: CH_TD_BTCM_BTCAUD
+---
+spring:
+  profiles: prod
+
+redis:
+  host: 172.31.44.11
+  port: 6379
+  topics:
+    orderbook:
+      btcaud: CH_OB_BTCM_BTCAUD
+    marketDetail:
+      btcaud: CH_MD_BTCM_BTCAUD
+    tradeDetail:
+      btcaud: CH_TD_BTCM_BTCAUD
+---
+
+
